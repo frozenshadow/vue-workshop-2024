@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Web Component Demo - Custom Element in Shadow DOM and HTML template</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h3>Welcome, these are our employees!</h3>
+    <employee-list-item avatar-service="github" avatar-user="frozenshadow" full-name="Frozenshadow" job-position="Software Engineer"></employee-list-item>
+
+    <template id="employee-list-item-template">
+        <style>
+            h3 {
+                color: navy;
+            }
+
+            img {
+                max-width: 150px;
+                border-radius: 50%;
+                box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+                display: block;
+            }
+        </style>
+        <h3></h3>
+        <img src="" alt="" />
+        <small></small>
+    </template>
+
+    <script src="employee-list-item.js"></script>
+</body>
+</html>
