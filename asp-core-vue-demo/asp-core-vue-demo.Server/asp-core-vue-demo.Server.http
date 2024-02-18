@@ -1,0 +1,6 @@
+@asp_core_vue_demo.Server_HostAddress = http://localhost:5201
+
+GET {{asp_core_vue_demo.Server_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
